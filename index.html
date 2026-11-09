@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>旅まとめ</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="home">
+  <main class="page">
+    <section class="home-hero">
+      <h1 class="home-logo">旅まとめ</h1>
+      <p class="home-catch">みんなの旅をもっと簡単に♪</p>
+    </section>
+
+    <section class="card">
+      <label class="field">
+        <span class="field-label">あなたの名前</span>
+        <input id="display-name" type="text" placeholder="例: ゆうだい" autocomplete="nickname">
+      </label>
+    </section>
+
+    <section class="card">
+      <label class="field">
+        <span class="field-label">旅の名前</span>
+        <input id="trip-name" type="text" placeholder="例: 東京旅行">
+      </label>
+      <button id="create-trip" type="button" class="btn btn-primary">＋ 新しい旅をつくる</button>
+    </section>
+
+    <section class="card">
+      <label class="field">
+        <span class="field-label">招待コード</span>
+        <input id="invite-code" type="text" placeholder="例: K7Q2MD" maxlength="6" autocapitalize="characters">
+      </label>
+      <button id="join-trip" type="button" class="btn">招待コードで参加する</button>
+    </section>
+
+    <section>
+      <h2 class="section-title">これまでの旅行</h2>
+      <ul id="trip-history" class="trip-history">
+        <li class="placeholder">ここに参加した旅が並びます</li>
+      </ul>
+    </section>
+  </main>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
