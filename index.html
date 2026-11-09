@@ -1,22 +1,194 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>SPOTS | スポット投票</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>SPOTS | スポット投票</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main class="app">
-  <header class="top"><a class="back" href="#" aria-label="戻る">‹</a><div class="trip"><span>旅行プラン</span><strong>My Trip</strong></div><span class="members" aria-label="メンバー">♙</span></header>
-  <section class="main">
-    <div class="heading"><div><span class="eyebrow">SPOTS</span><h1>スポット投票</h1></div><span class="counter">候補 0 件</span></div>
-    <p class="description">行きたい場所を追加して、みんなで投票しよう。</p>
-    <div class="search-row"><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input type="search" placeholder="Search spot" aria-label="スポット検索"></label><button class="add" type="button" aria-label="スポットを追加">＋</button></div>
-    <div class="list-heading"><strong>行きたい場所</strong><span>♡ 人気順</span></div>
-    <div class="empty"><div class="pin-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 57S13 37 13 25a19 19 0 1 1 38 0C51 37 32 57 32 57Z"/><circle cx="32" cy="25" r="7"/></svg></div><strong>まだスポットがありません</strong><p>右上の＋ボタンから<br>行きたい場所を追加しましょう</p></div>
-  </section>
-  <nav class="nav" aria-label="メインメニュー"><a href="#"><span>▦</span><small>日程</small></a><a href="#" class="selected" aria-current="page"><span>⌖</span><small>スポット</small></a><a href="#"><span>¥</span><small>予算</small></a></nav>
-</main>
+
+    <div class="app">
+
+        <!-- 上部ヘッダー -->
+        <header class="top">
+
+            <a href="#" class="back" aria-label="戻る">
+                &#8249;
+            </a>
+
+            <div class="trip">
+                <span>TRIP PLANNER</span>
+                <strong>旅行プラン</strong>
+            </div>
+
+            <div class="members" aria-label="メンバー">
+                ♙
+            </div>
+
+        </header>
+
+        <!-- メイン画面 -->
+        <main class="main">
+
+            <!-- ページタイトル -->
+            <div class="heading">
+
+                <div>
+                    <div class="eyebrow">
+                        SPOTS
+                    </div>
+
+                    <h1>スポット投票</h1>
+                </div>
+
+                <span class="counter">
+                    0 スポット
+                </span>
+
+            </div>
+
+            <p class="description">
+                行きたい場所を追加して、みんなで投票しよう。
+            </p>
+
+            <!-- スポット検索 -->
+            <div class="search-row">
+
+                <label class="search">
+
+                    <svg viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <circle cx="10.8"
+                                cy="10.8"
+                                r="6.8">
+                        </circle>
+
+                        <path d="M16 16L21 21">
+                        </path>
+                    </svg>
+
+                    <input
+                        type="search"
+                        placeholder="Search spot"
+                        aria-label="スポットを検索"
+                    >
+
+                </label>
+
+                <!-- スポット追加 -->
+                <button class="add"
+                        type="button"
+                        aria-label="スポットを追加">
+                    +
+                </button>
+
+            </div>
+
+            <!-- スポット一覧 -->
+            <div class="list-heading">
+
+                <strong>スポット一覧</strong>
+
+                <span>人気順</span>
+
+            </div>
+
+            <!-- スポット未登録時 -->
+            <section class="empty">
+
+                <div class="pin-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         aria-hidden="true">
+
+                        <path d="
+                            M12 21
+                            C12 21 5 14.5 5 9.5
+                            A7 7 0 0 1 19 9.5
+                            C19 14.5 12 21 12 21
+                            Z
+                        ">
+                        </path>
+
+                        <circle cx="12"
+                                cy="9.5"
+                                r="2.4">
+                        </circle>
+
+                    </svg>
+
+                </div>
+
+                <strong>
+                    まだスポットがありません
+                </strong>
+
+                <p>
+                    行きたい場所を検索するか、<br>
+                    ＋ボタンから追加してください。
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- 下部ナビゲーション -->
+        <nav class="nav">
+
+            <!-- 日程 -->
+            <a href="#" aria-label="日程">
+
+                <span>▦</span>
+                <small>日程</small>
+
+            </a>
+
+            <!-- スポット -->
+            <a href="#"
+               class="selected"
+               aria-current="page"
+               aria-label="スポット">
+
+                <svg class="nav-pin"
+                     viewBox="0 0 24 24"
+                     aria-hidden="true">
+
+                    <path d="
+                        M20 10
+                        C20 16 12 22 12 22
+                        S4 16 4 10
+                        A8 8 0 1 1 20 10
+                        Z
+                    ">
+                    </path>
+
+                    <circle cx="12"
+                            cy="10"
+                            r="2.5">
+                    </circle>
+
+                </svg>
+
+                <small>スポット</small>
+
+            </a>
+
+            <!-- 予算 -->
+            <a href="#" aria-label="予算">
+
+                <span>¥</span>
+                <small>予算</small>
+
+            </a>
+
+        </nav>
+
+    </div>
+
 </body>
 </html>
